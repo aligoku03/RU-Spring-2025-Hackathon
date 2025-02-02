@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), 
+                url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+/* Fading effect for text */
+/* Fading effect for text */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem 3rem 2rem 2rem; /* Increased right padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: border-color 0.3s ease;
+}
+
+/* Placeholder Text Styling */
+input::placeholder,
+select::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Lighter contrast for readability */
+}
+
+/* Dropdown (select) styling */
+select {
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly darker background */
+    color: white; /* Keeps text white */
+}
+
+/* Dropdown options background color */
+select option {
+    background-color: rgba(0, 0, 0, 0.6); /* Darker background for dropdown options */
+    color: white; /* White text for options */
+}
+
+/* Input focus state */
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
